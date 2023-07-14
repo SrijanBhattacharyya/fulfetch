@@ -1,0 +1,13 @@
+{
+    "App-Settings": {
+        "name": "fulfetch",
+        "version": "1.10.1",
+        "creator-name": "Srijan Bhattacharyya"
+    },
+    "Image-Settings": {
+        "resultant-dim": [350,350]
+    },
+    "ASCII-Settings": {
+        "img_aspect-ratio": [18,40]
+    }
+}

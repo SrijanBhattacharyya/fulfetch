@@ -1,0 +1,58 @@
+{
+    "1": {
+        "FLOWER-NAME": "Rose",
+        "FLOWER-IMAGE-PATH": "Rose.png",
+        "ORIGIN-COUNTRY": "Central Asia",
+        "BLOOMING-SEASON": "",
+        "SYMBOLIC-MEANING": "",
+        "SYMBOLIC-OS": ""
+    },
+    "2": {
+        "FLOWER-NAME": "Lotus",
+        "FLOWER-IMAGE-PATH": "Lotus.png",
+        "ORIGIN-COUNTRY": "Australia",
+        "BLOOMING-SEASON": "",
+        "SYMBOLIC-MEANING": "",
+        "SYMBOLIC-OS": ""
+    },
+    "3": {
+        "FLOWER-NAME": "Sunflower",
+        "FLOWER-IMAGE-PATH": "Sunflower.png",
+        "ORIGIN-COUNTRY": "North America",
+        "BLOOMING-SEASON": "",
+        "SYMBOLIC-MEANING": "",
+        "SYMBOLIC-OS": ""
+    },
+    "4": {
+        "FLOWER-NAME": "Dahlia",
+        "FLOWER-IMAGE-PATH": "Dahlia.png",
+        "ORIGIN-COUNTRY": "Mexico, Guatemala",
+        "BLOOMING-SEASON": "",
+        "SYMBOLIC-MEANING": "",
+        "SYMBOLIC-OS": ""
+    },
+    "5": {
+        "FLOWER-NAME": "Daisy",
+        "FLOWER-IMAGE-PATH": "Daisy.png",
+        "ORIGIN-COUNTRY": "Europe, Asia",
+        "BLOOMING-SEASON": "",
+        "SYMBOLIC-MEANING": "",
+        "SYMBOLIC-OS": ""
+    },
+    "6": {
+        "FLOWER-NAME": "Marigold",
+        "FLOWER-IMAGE-PATH": "Marigold.png",
+        "ORIGIN-COUNTRY": "America",
+        "BLOOMING-SEASON": "",
+        "SYMBOLIC-MEANING": "",
+        "SYMBOLIC-OS": ""
+    },
+    "7": {
+        "FLOWER-NAME": "Orchid",
+        "FLOWER-IMAGE-PATH": "Orchid.png",
+        "ORIGIN-COUNTRY": "China, Japan",
+        "BLOOMING-SEASON": "",
+        "SYMBOLIC-MEANING": "",
+        "SYMBOLIC-OS": "Arch Linux"
+    }
+}
