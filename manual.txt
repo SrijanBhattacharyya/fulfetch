@@ -1,1 +1,13 @@
-Nothing...
+Usage:
+ fulfetch
+ fulfetch [options] [path-to-the-image]
+
+Flags                          Usage
+ -h, --help                    display this help
+ -v, --version                 display version
+ -i, --info                    display app info
+
+ -f <path-to-focused-image>    enables focused mode
+ -nt                           sets default transparency value to False.
+                               You should mention this before the -f tag, if you are providing an
+                               image with background colors other than white or transparrent.
