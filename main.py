@@ -70,13 +70,13 @@ def get_rgb (px_data: Image, index: tuple):
     return px_data [index]
 
 
-def get_settings (section: str = False):
+def get_settings (section: str = False) -> dict:
     with open (settings_file_path) as f:
         if section:
-            return json.load (f)[section]
-        
+            return dict (json.load (f)[section])
+
         else:
-            return json.load (f)["App-Settings"]
+            return dict (json.load (f)["App-Settings"])
 
 
 def img2ascii (image_path: os.path = False):
@@ -226,13 +226,24 @@ def default_mode () -> None:
         print ("\n", end = '')
 
 
+def print_version () -> None:
+    print (f"Version: {app_settings ['version']}")
+
+
+def print_info () -> None:
+    print (f"App name: {app_settings ['name']}")
+    print (f"Version: {app_settings ['version']}")
+    print (f"Creator's name: {app_settings ['creator-name']}")
+
+
 def main () -> None:
-    global image_settings, ascii_settings, transparrent_bg
+    global image_settings, ascii_settings, transparrent_bg, app_settings
 
     transparrent_bg = True
 
     image_settings = get_settings ("Image-Settings")
     ascii_settings = get_settings ("ASCII-Settings")
+    app_settings = get_settings ()
 
     if len (sys.argv) > 1:
         argv = sys.argv [1:]
@@ -246,8 +257,13 @@ def main () -> None:
         if len (flags) != 0:
             for flag in flags:
                 if (flag == 'h') or (flag == 'help'): print_help ()
+                if (flag == 'v') or (flag == 'version'): print_version ()
+                if (flag == 'i') or (flag == 'info'): print_info ()
+
                 if flag == 'nt': transparrent_bg = False
                 if flag == 'f': focused_mode (args [0])
+
+                else: print_error ("FlagNotFoundError"); print_help ()
 
         else: default_mode ()
 
