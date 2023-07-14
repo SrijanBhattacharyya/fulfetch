@@ -9,6 +9,7 @@ import json, sys, subprocess as sp, platform as pt
 from PIL import Image
 
 
+man_file = os.path.join (mainDir, "manual.txt")
 info_file_path = os.path.join (mainDir, "info.json")
 settings_file_path = os.path.join (mainDir, "settings.json")
 intersection_file_path = os.path.join (mainDir, "intersection.json")
@@ -42,7 +43,7 @@ def get_def_flower () -> dict:
 
 
 def print_help () -> None:
-    help = """Nothing ..."""
+    with open (man_file) as f: help = f.read ()
     print (help)
     exit ()
 
